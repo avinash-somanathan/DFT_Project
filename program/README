@@ -1,0 +1,22 @@
+Team Members -
+1. Abhinav Chilakamarri
+2. Pravin Nandagopal
+3. Musaddique Ansari
+4. Avinash Somanathan
+
+The following is tihe instruction for compiling and executing the parser. 
+1. Upload every file to your UNIX account (Aludra or viterbi-scf1) using any FTP program, e.g., FileZilla
+* Untar circuit.tar.gz before or after the upload. 
+2. Go to the directory where files are located
+3. Compile the CLI using this command: g++ -o readckt readckt_print.cpp
+4. Execute the CLI: ./readckt
+5. Functions available are -
+	-READ filename (Reads a circuit file and populates the datastructure for each node)
+	-LEVEL (NOTE - READ must be executed before level, this levelizes the files and stores levels for all nodes)
+	-SIMUL (NOTE - READ must be executed before simul, this simulates the circuits in an event driver manner)
+	-PC (prints the circuit stored in memory)
+	-QUIT (quits)
+
+Please use PC after level to check the level of each node.
+
+SIMUL will display the result in command line at the end of the execution. 
